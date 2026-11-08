@@ -1,0 +1,6 @@
+{
+  "name": "Aviation IT & Game Developer Portfolio",
+  "description": "Нисэх хүчний IT инженер болон Тоглоом хөгжүүлэгчийн хувийн вэб сайт, 10 жилийн төлөвлөгөө, ур чадвар, интерактив 2D тоглоомын туршилт.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
