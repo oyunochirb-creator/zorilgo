@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Tanjiro Kamado (2020+)">
+  <defs>
+    <linearGradient id="bgTanjiro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="24" fill="url(#bgTanjiro)" />
+  <!-- Water Breathing Swirl -->
+  <path d="M20 260 Q95 210 165 250 T305 230" fill="none" stroke="#38bdf8" stroke-width="8" opacity="0.35" stroke-linecap="round" />
+  <!-- Checkered Haori -->
+  <path d="M68 320 C76 242 108 228 160 228 C212 228 244 242 252 320 Z" fill="#111827" />
+  <rect x="86" y="246" width="26" height="28" fill="#10b981" opacity="0.85" />
+  <rect x="112" y="274" width="26" height="28" fill="#10b981" opacity="0.85" />
+  <rect x="182" y="246" width="26" height="28" fill="#10b981" opacity="0.85" />
+  <rect x="208" y="274" width="26" height="28" fill="#10b981" opacity="0.85" />
+  <path d="M134 228 L160 320 L186 228 Z" fill="#18181b" />
+  <!-- Neck -->
+  <rect x="143" y="196" width="34" height="36" rx="10" fill="#fed7aa" />
+  <!-- Hanafuda Earrings -->
+  <rect x="94" y="176" width="12" height="24" rx="2" fill="#f8fafc" stroke="#475569" stroke-width="1.5" />
+  <circle cx="100" cy="184" r="3.5" fill="#ef4444" />
+  <rect x="214" y="176" width="12" height="24" rx="2" fill="#f8fafc" stroke="#475569" stroke-width="1.5" />
+  <circle cx="220" cy="184" r="3.5" fill="#ef4444" />
+  <!-- Face -->
+  <path d="M108 130 C108 98 212 98 212 130 C212 184 188 210 160 214 C132 210 108 184 108 130 Z" fill="#ffedd5" />
+  <!-- Burgundy Hair -->
+  <path d="M100 138 L92 102 L116 106 L124 72 L152 94 L168 64 L188 94 L214 78 L212 108 L230 106 L218 140 L196 116 L160 120 L124 116 Z" fill="#450a0a" />
+  <!-- Forehead Scar -->
+  <path d="M122 114 L132 106 L136 118 L144 112" fill="none" stroke="#991b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Determined Eyes -->
+  <ellipse cx="136" cy="156" rx="10" ry="11" fill="#ffffff" />
+  <ellipse cx="184" cy="156" rx="10" ry="11" fill="#ffffff" />
+  <circle cx="136" cy="156" r="6" fill="#7f1d1d" />
+  <circle cx="184" cy="156" r="6" fill="#7f1d1d" />
+  <circle cx="138" cy="153" r="2" fill="#ffffff" />
+  <circle cx="186" cy="153" r="2" fill="#ffffff" />
+  <path d="M120 140 L148 146" stroke="#1c1917" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M200 140 L172 146" stroke="#1c1917" stroke-width="3.5" stroke-linecap="round" />
+  <!-- Mouth -->
+  <path d="M144 186 Q160 194 176 186" fill="none" stroke="#9a3412" stroke-width="2.5" stroke-linecap="round" />
+</svg>

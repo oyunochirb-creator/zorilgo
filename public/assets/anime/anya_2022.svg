@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Anya Forger (2022)">
+  <defs>
+    <linearGradient id="bgAnya" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4c1d95" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="24" fill="url(#bgAnya)" />
+  <circle cx="72" cy="72" r="6" fill="#fde047" opacity="0.7" />
+  <circle cx="254" cy="84" r="5" fill="#fde047" opacity="0.6" />
+  <!-- Eden Academy Uniform -->
+  <path d="M80 320 C86 244 114 232 160 232 C206 232 234 244 240 320 Z" fill="#111827" />
+  <path d="M124 232 L160 278 L196 232 Z" fill="#f8fafc" />
+  <path d="M144 246 L160 264 L176 246 Z" fill="#dc2626" />
+  <path d="M108 242 L134 320" stroke="#facc15" stroke-width="3" />
+  <path d="M212 242 L186 320" stroke="#facc15" stroke-width="3" />
+  <!-- Pink Hair Back -->
+  <path d="M88 134 C88 68 232 68 232 134 L240 218 L80 218 Z" fill="#f472b6" />
+  <!-- Horn Hair Clips -->
+  <polygon points="104,96 122,72 130,104" fill="#111827" stroke="#facc15" stroke-width="2" />
+  <polygon points="216,96 198,72 190,104" fill="#111827" stroke="#facc15" stroke-width="2" />
+  <!-- Face -->
+  <path d="M108 136 C108 104 212 104 212 136 C212 186 188 210 160 212 C132 210 108 186 108 136 Z" fill="#ffedd5" />
+  <!-- Pink Bangs -->
+  <path d="M104 134 C108 88 212 88 216 134 L196 118 L180 136 L160 116 L140 136 L124 118 Z" fill="#f9a8d4" />
+  <!-- Big Emerald Eyes -->
+  <ellipse cx="134" cy="158" rx="12" ry="13" fill="#ffffff" />
+  <ellipse cx="186" cy="158" rx="12" ry="13" fill="#ffffff" />
+  <circle cx="134" cy="159" r="8" fill="#10b981" />
+  <circle cx="186" cy="159" r="8" fill="#10b981" />
+  <circle cx="134" cy="159" r="4" fill="#064e3b" />
+  <circle cx="186" cy="159" r="4" fill="#064e3b" />
+  <circle cx="138" cy="154" r="3" fill="#ffffff" />
+  <circle cx="190" cy="154" r="3" fill="#ffffff" />
+  <!-- Blush & Smirk (Heh!) -->
+  <ellipse cx="118" cy="176" rx="8" ry="4" fill="#fb7185" opacity="0.45" />
+  <ellipse cx="202" cy="176" rx="8" ry="4" fill="#fb7185" opacity="0.45" />
+  <path d="M144 186 Q160 198 176 186" fill="none" stroke="#9a3412" stroke-width="2.5" stroke-linecap="round" />
+</svg>

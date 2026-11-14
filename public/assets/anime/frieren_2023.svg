@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Frieren (2023)">
+  <defs>
+    <linearGradient id="bgFrieren" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" rx="24" fill="url(#bgFrieren)" />
+  <circle cx="160" cy="135" r="108" fill="#a7f3d0" opacity="0.1" />
+  <!-- White & Gold Mage Outfit -->
+  <path d="M76 320 C84 242 112 226 160 226 C208 226 236 242 244 320 Z" fill="#f8fafc" />
+  <path d="M126 226 L160 282 L194 226 Z" fill="#0f172a" />
+  <path d="M108 236 L132 320" stroke="#eab308" stroke-width="3" />
+  <path d="M212 236 L188 320" stroke="#eab308" stroke-width="3" />
+  <!-- Twin-tails -->
+  <path d="M88 124 L54 226 L84 234 L104 148 Z" fill="#cbd5e1" />
+  <path d="M232 124 L266 226 L236 234 L216 148 Z" fill="#cbd5e1" />
+  <!-- Pointed Elf Ears -->
+  <polygon points="104,154 62,140 100,170" fill="#ffedd5" />
+  <polygon points="216,154 258,140 220,170" fill="#ffedd5" />
+  <!-- Red Earrings -->
+  <circle cx="88" cy="166" r="4.5" fill="#e11d48" />
+  <circle cx="232" cy="166" r="4.5" fill="#e11d48" />
+  <!-- Face -->
+  <path d="M108 130 C108 98 212 98 212 130 C212 184 188 208 160 210 C132 208 108 184 108 130 Z" fill="#fff7ed" />
+  <!-- Silver Hair Bangs -->
+  <path d="M100 136 C104 82 216 82 220 136 L194 114 L176 138 L160 112 L144 138 L126 114 Z" fill="#e2e8f0" />
+  <!-- Serene Green Eyes -->
+  <ellipse cx="136" cy="156" rx="10" ry="8" fill="#ffffff" />
+  <ellipse cx="184" cy="156" rx="10" ry="8" fill="#ffffff" />
+  <circle cx="136" cy="156" r="5.5" fill="#10b981" />
+  <circle cx="184" cy="156" r="5.5" fill="#10b981" />
+  <circle cx="138" cy="154" r="2" fill="#ffffff" />
+  <circle cx="186" cy="154" r="2" fill="#ffffff" />
+  <path d="M148 186 Q160 190 172 186" fill="none" stroke="#9a3412" stroke-width="2" stroke-linecap="round" />
+</svg>

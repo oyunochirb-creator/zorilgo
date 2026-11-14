@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Sung Jinwoo (2024)">
+  <defs>
+    <radialGradient id="auraJinwoo" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.5" />
+      <stop offset="65%" stop-color="#1e1b4b" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#030712" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+  <rect width="320" height="320" rx="24" fill="#030712" />
+  <rect width="320" height="320" rx="24" fill="url(#auraJinwoo)" />
+  <!-- Shadow Monarch Flames -->
+  <path d="M40 300 Q70 210 110 250 T160 210 T220 250 T280 290" fill="none" stroke="#818cf8" stroke-width="4" opacity="0.4" />
+  <!-- Dark Hunter Coat -->
+  <path d="M68 320 C76 238 110 222 160 222 C210 222 244 238 252 320 Z" fill="#0f172a" stroke="#312e81" stroke-width="2" />
+  <path d="M132 222 L160 290 L188 222 Z" fill="#1e293b" />
+  <!-- Neck -->
+  <rect x="142" y="192" width="36" height="36" rx="10" fill="#fed7aa" />
+  <!-- Sharp Face -->
+  <path d="M110 126 C110 96 210 96 210 126 L204 176 L160 210 L116 176 Z" fill="#ffedd5" />
+  <!-- Dark Hair -->
+  <path d="M102 142 L94 102 L120 84 L154 64 L194 78 L224 102 L216 142 L192 114 L164 136 L142 112 L120 132 Z" fill="#09090b" />
+  <!-- Glowing Ice-Blue Eyes -->
+  <path d="M122 148 L148 153 L144 161 L124 157 Z" fill="#38bdf8" />
+  <path d="M198 148 L172 153 L176 161 L196 157 Z" fill="#38bdf8" />
+  <circle cx="136" cy="154" r="2.5" fill="#ffffff" />
+  <circle cx="184" cy="154" r="2.5" fill="#ffffff" />
+  <path d="M146 186 L174 184" stroke="#7c2d12" stroke-width="2.2" stroke-linecap="round" />
+</svg>

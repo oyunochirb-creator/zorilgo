@@ -3,16 +3,24 @@ import { useState } from 'react';
 interface NavbarProps {
   activeSection: string;
   onNavigate: (sectionId: string) => void;
+  viewMode?: 'portfolio' | 'anime-guess' | '2d-game' | 'leaderboard';
+  onExitStandalone?: () => void;
 }
 
-export function Navbar({ activeSection, onNavigate }: NavbarProps) {
+export function Navbar({
+  activeSection,
+  onNavigate,
+  viewMode = 'portfolio',
+  onExitStandalone,
+}: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navItems = [
-    { id: 'roadmap', label: '10 жилийн алсын хараа' },
-    { id: 'skills', label: '3 Гол чадвар' },
-    { id: 'gamelab', label: '2D Тоглоомын Лаб' },
-    { id: 'tracker', label: 'Олимпиад & Хичээл' },
+  const isStandalone = viewMode !== 'portfolio';
+
+  const portfolioSections = [
+    { id: 'roadmap', label: 'Төлөвлөгөө' },
+    { id: 'skills', label: 'Чадвар' },
+    { id: 'tracker', label: 'Бэлтгэл' },
   ];
 
   const handleNavClick = (id: string) => {
@@ -21,90 +29,110 @@ export function Navbar({ activeSection, onNavigate }: NavbarProps) {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-gray-950/80 border-b border-gray-800/80 transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        {/* Лого ба Албан нэр */}
+    <header className="sticky top-0 z-50 w-full backdrop-blur-xl bg-white/80 border-b border-sky-200/80 shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-6">
         <button
-          onClick={() => handleNavClick('hero')}
-          className="flex items-center gap-2.5 text-left group focus:outline-none cursor-pointer"
+          type="button"
+          onClick={() => {
+            if (isStandalone && onExitStandalone) {
+              onExitStandalone();
+            } else {
+              handleNavClick('hero');
+            }
+          }}
+          className="text-lg font-bold tracking-tight text-slate-900 font-mono whitespace-nowrap shrink-0 cursor-pointer hover:text-sky-600 transition-colors"
         >
-          <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-600 to-blue-500 flex items-center justify-center text-white shadow-lg shadow-cyan-500/25 group-hover:scale-105 transition-transform">
-            <svg
-              className="w-5 h-5 -rotate-45"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-              />
-            </svg>
-          </div>
-          <div>
-            <div className="flex items-center gap-1.5">
-              <span className="font-bold text-base sm:text-lg tracking-tight text-white font-mono">
-                AeroDev
-              </span>
-              <span className="text-[10px] uppercase font-semibold px-1.5 py-0.5 rounded bg-cyan-950 border border-cyan-800 text-cyan-400">
-                Aviation IT
-              </span>
-            </div>
-            <p className="text-[11px] text-gray-400 leading-none">
-              IT Engineer &amp; Game Developer
-            </p>
-          </div>
+          AeroDev
         </button>
 
-        {/* Desktop Цэс */}
-        <nav className="hidden md:flex items-center gap-1 lg:gap-2">
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => handleNavClick(item.id)}
-              className={`px-3 py-1.5 rounded-lg text-xs lg:text-sm font-medium transition-all cursor-pointer ${
-                activeSection === item.id
-                  ? 'bg-cyan-500/15 text-cyan-300 border border-cyan-500/30'
-                  : 'text-gray-300 hover:text-white hover:bg-gray-800/60'
-              }`}
-            >
-              {item.label}
-            </button>
-          ))}
-        </nav>
+        <nav className="hidden md:flex items-center gap-6">
+          {!isStandalone &&
+            portfolioSections.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => handleNavClick(item.id)}
+                className={`text-sm font-semibold whitespace-nowrap shrink-0 transition-colors cursor-pointer pb-0.5 border-b-2 ${
+                  activeSection === item.id
+                    ? 'text-sky-600 border-sky-500'
+                    : 'text-slate-700 border-transparent hover:text-slate-950 hover:border-sky-300'
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
 
-        {/* Үйлдлийн товч (Desktop) */}
-        <div className="hidden md:flex items-center gap-2.5">
           <a
-            href="https://glistening-bombolone-d2a5e8.netlify.app/"
+            href="?tab=anime-guess"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-gray-900 hover:bg-gray-800 text-cyan-300 border border-cyan-800/80 hover:border-cyan-500 transition-all cursor-pointer shadow-sm group"
-            title="Glistening Bombolone (Netlify) сайт руу зочлох"
+            className={`text-sm font-semibold whitespace-nowrap shrink-0 transition-colors pb-0.5 border-b-2 ${
+              viewMode === 'anime-guess'
+                ? 'text-sky-600 border-sky-500'
+                : 'text-slate-700 border-transparent hover:text-sky-700 hover:border-sky-300'
+            }`}
           >
-            <span className="w-2 h-2 rounded-full bg-emerald-400 group-hover:animate-ping" />
-            <span>Netlify Төсөл</span>
-            <svg className="w-3.5 h-3.5 text-gray-400 group-hover:text-cyan-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-            </svg>
+            Anime Guess ↗
           </a>
-
-          <button
-            onClick={() => handleNavClick('gamelab')}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/20 hover:brightness-110 active:scale-95 transition-all cursor-pointer"
+          <a
+            href="?tab=2d-game"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-sm font-semibold whitespace-nowrap shrink-0 transition-colors pb-0.5 border-b-2 ${
+              viewMode === '2d-game'
+                ? 'text-sky-600 border-sky-500'
+                : 'text-slate-700 border-transparent hover:text-sky-700 hover:border-sky-300'
+            }`}
           >
-            <span>🎮 2D Тоглоом турших</span>
-          </button>
+            2D Тоглоом ↗
+          </a>
+        </nav>
+
+        <div className="hidden md:flex items-center gap-2 shrink-0">
+          {viewMode === 'anime-guess' ? (
+            <button
+              type="button"
+              onClick={() => handleNavClick('leaderboard')}
+              className="px-3.5 py-2 rounded-lg text-xs font-bold bg-amber-50 text-amber-800 border border-amber-300 hover:bg-amber-100 shadow-sm transition-colors cursor-pointer whitespace-nowrap shrink-0"
+            >
+              🏆 Leaderboard
+            </button>
+          ) : (
+            <a
+              href="?tab=leaderboard"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3.5 py-2 rounded-lg text-xs font-bold bg-amber-50 text-amber-800 border border-amber-300 hover:bg-amber-100 shadow-sm transition-colors cursor-pointer whitespace-nowrap shrink-0"
+            >
+              🏆 Leaderboard ↗
+            </a>
+          )}
+
+          {isStandalone && onExitStandalone ? (
+            <button
+              type="button"
+              onClick={onExitStandalone}
+              className="px-4 py-2 rounded-lg text-xs font-bold bg-white text-slate-800 border border-sky-200 hover:bg-sky-50 shadow-sm transition-colors cursor-pointer whitespace-nowrap shrink-0"
+            >
+              ← Портфолио руу
+            </button>
+          ) : (
+            <a
+              href="?tab=anime-guess"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 rounded-lg text-xs font-bold bg-sky-500 text-white hover:bg-sky-600 shadow-sm transition-colors cursor-pointer whitespace-nowrap shrink-0"
+            >
+              Anime Guess ↗
+            </a>
+          )}
         </div>
 
-        {/* Mobile Hamburger товчлуур */}
         <button
           type="button"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 rounded-lg text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none"
-          aria-label="Цэс нээх"
+          className="md:hidden p-2 rounded-lg text-slate-700 hover:text-slate-950 hover:bg-sky-100/80"
+          aria-label="Цэс"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {mobileMenuOpen ? (
@@ -116,38 +144,60 @@ export function Navbar({ activeSection, onNavigate }: NavbarProps) {
         </button>
       </div>
 
-      {/* Mobile Цэс */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-gray-950/95 border-b border-gray-800 px-4 pt-2 pb-4 space-y-1">
-          {navItems.map((item) => (
+        <div className="md:hidden bg-white/95 border-b border-sky-200 px-4 pt-2 pb-4 space-y-1">
+          {!isStandalone &&
+            portfolioSections.map((item) => (
+              <button
+                key={item.id}
+                type="button"
+                onClick={() => handleNavClick(item.id)}
+                className="block w-full text-left px-3 py-2.5 rounded-md text-sm font-medium text-slate-800 hover:bg-sky-50 hover:text-sky-700"
+              >
+                {item.label}
+              </button>
+            ))}
+
+          <a
+            href="?tab=anime-guess"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block w-full text-left px-3 py-2.5 rounded-md text-sm font-semibold text-sky-700 hover:bg-sky-50"
+          >
+            Anime Guess ↗
+          </a>
+          <a
+            href="?tab=2d-game"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block w-full text-left px-3 py-2.5 rounded-md text-sm font-semibold text-sky-700 hover:bg-sky-50"
+          >
+            2D Тоглоом ↗
+          </a>
+          <a
+            href="?tab=leaderboard"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block w-full text-left px-3 py-2.5 rounded-md text-sm font-semibold text-amber-700 hover:bg-amber-50"
+          >
+            🏆 Leaderboard ↗
+          </a>
+
+          {isStandalone && onExitStandalone && (
             <button
-              key={item.id}
-              onClick={() => handleNavClick(item.id)}
-              className="block w-full text-left px-3 py-2 rounded-md text-sm font-medium text-gray-200 hover:bg-gray-800 hover:text-cyan-400"
+              type="button"
+              onClick={() => {
+                onExitStandalone();
+                setMobileMenuOpen(false);
+              }}
+              className="block w-full text-left px-3 py-2.5 rounded-md text-sm font-semibold text-slate-800 hover:bg-sky-50"
             >
-              {item.label}
+              ← Портфолио руу
             </button>
-          ))}
-          <div className="pt-2 space-y-2">
-            <a
-              href="https://glistening-bombolone-d2a5e8.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 w-full py-2.5 rounded-lg text-sm font-semibold bg-gray-900 border border-cyan-800 text-cyan-300 hover:bg-gray-800"
-            >
-              <span className="w-2 h-2 rounded-full bg-emerald-400" />
-              <span>Netlify Төсөл нээх</span>
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </a>
-            <button
-              onClick={() => handleNavClick('gamelab')}
-              className="w-full text-center px-4 py-2 rounded-lg text-sm font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-white"
-            >
-              🎮 2D Тоглоом турших
-            </button>
-          </div>
+          )}
         </div>
       )}
     </header>

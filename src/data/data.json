@@ -1,0 +1,243 @@
+{
+  "modes": [
+    {
+      "id": "character",
+      "icon": "👤",
+      "title": "Дүрээр нь",
+      "subtitle": "Аль анимэний дүр вэ?",
+      "coverImage": "/assets/anime/gojo_2020.svg",
+      "coverLabel": "Jujutsu Kaisen (2020)"
+    },
+    {
+      "id": "power",
+      "icon": "💪",
+      "title": "Хүч чадлаар нь",
+      "subtitle": "Хамгийн хүчтэй дүр хэн бэ?",
+      "coverImage": "/assets/anime/jinwoo_2024.svg",
+      "coverLabel": "Solo Leveling (2024)"
+    },
+    {
+      "id": "ability",
+      "icon": "⚡",
+      "title": "Чадвараар нь",
+      "subtitle": "Ямар чадвартай дүр вэ?",
+      "coverImage": "/assets/anime/tanjiro_2020.svg",
+      "coverLabel": "Demon Slayer (2020+)"
+    },
+    {
+      "id": "emoji",
+      "icon": "😀",
+      "title": "Эможигоор нь",
+      "subtitle": "Эможиноос анимэг таах",
+      "coverImage": "/assets/anime/anya_2022.svg",
+      "coverLabel": "Spy x Family (2022)"
+    },
+    {
+      "id": "quote",
+      "icon": "🗣️",
+      "title": "Ишлэлээр нь",
+      "subtitle": "Энэ үгийг ямар дүр хэлсэн бэ?",
+      "coverImage": "/assets/anime/frieren_2023.svg",
+      "coverLabel": "Frieren (2023)"
+    },
+    {
+      "id": "appearance",
+      "icon": "👁️",
+      "title": "Гадаад төрхөөр нь",
+      "subtitle": "Үс, нүд, хувцсаар нь таах",
+      "coverImage": "/assets/anime/gojo_2020.svg",
+      "coverLabel": "Jujutsu Kaisen (2020)"
+    },
+    {
+      "id": "battle",
+      "icon": "⚔️",
+      "title": "Тулаанаар нь",
+      "subtitle": "Хэн хэнтэй тулалдсан бэ?",
+      "coverImage": "/assets/anime/tanjiro_2020.svg",
+      "coverLabel": "Demon Slayer (2020+)"
+    },
+    {
+      "id": "personality",
+      "icon": "❤️",
+      "title": "Зан чанараар нь",
+      "subtitle": "Ямар зан чанартай дүр вэ?",
+      "coverImage": "/assets/anime/anya_2022.svg",
+      "coverLabel": "Spy x Family (2022)"
+    },
+    {
+      "id": "story",
+      "icon": "📖",
+      "title": "Түүхээр нь",
+      "subtitle": "Үйл явдлаас анимэг таах",
+      "coverImage": "/assets/anime/frieren_2023.svg",
+      "coverLabel": "Frieren (2023)"
+    },
+    {
+      "id": "comparison",
+      "icon": "🏆",
+      "title": "Харьцуулалтаар нь",
+      "subtitle": "Аль дүр нь илүү хүчтэй вэ?",
+      "coverImage": "/assets/anime/jinwoo_2024.svg",
+      "coverLabel": "Solo Leveling (2024)"
+    },
+    {
+      "id": "villain",
+      "icon": "👹",
+      "title": "Дайснаар нь",
+      "subtitle": "Гол эсрэг дүр хэн бэ?",
+      "coverImage": "/assets/anime/gojo_2020.svg",
+      "coverLabel": "Jujutsu Kaisen (2020)"
+    },
+    {
+      "id": "opening",
+      "icon": "🎵",
+      "title": "Дуугаар нь",
+      "subtitle": "Анимэний opening-оос таах",
+      "coverImage": "/assets/anime/frieren_2023.svg",
+      "coverLabel": "Frieren (2023)"
+    }
+  ],
+  "levels": [
+    {
+      "level": 1,
+      "title": "Түвшин 1",
+      "subtitle": "Эхлэл · 20 асуулт",
+      "image": "/assets/anime/gojo_2020.svg",
+      "badge": "2020 · Jujutsu Kaisen"
+    },
+    {
+      "level": 2,
+      "title": "Түвшин 2",
+      "subtitle": "Дунд · 20 асуулт",
+      "image": "/assets/anime/tanjiro_2020.svg",
+      "badge": "2020+ · Demon Slayer"
+    },
+    {
+      "level": 3,
+      "title": "Түвшин 3",
+      "subtitle": "Ахисан · 20 асуулт",
+      "image": "/assets/anime/anya_2022.svg",
+      "badge": "2022 · Spy x Family"
+    },
+    {
+      "level": 4,
+      "title": "Түвшин 4",
+      "subtitle": "Сорил · 20 асуулт",
+      "image": "/assets/anime/frieren_2023.svg",
+      "badge": "2023 · Frieren"
+    },
+    {
+      "level": 5,
+      "title": "Түвшин 5",
+      "subtitle": "Мастер · 20 асуулт",
+      "image": "/assets/anime/jinwoo_2024.svg",
+      "badge": "2024 · Solo Leveling"
+    }
+  ],
+  "emojiQuestions": [
+    { "level": 1, "emoji": "🍥🍜🦊", "answer": "Naruto", "options": ["Naruto", "Bleach", "One Piece", "Death Note"] },
+    { "level": 1, "emoji": "⚔️🌊👹", "answer": "Demon Slayer", "options": ["Demon Slayer", "Jujutsu Kaisen", "Bleach", "Chainsaw Man"] },
+    { "level": 1, "emoji": "🏐🔥👦", "answer": "Haikyuu", "options": ["Haikyuu", "Kuroko's Basketball", "Blue Lock", "Slam Dunk"] },
+    { "level": 1, "emoji": "🔥👨‍🍳⚔️", "answer": "Food wars", "options": ["Food wars", "Toriko", "Yakitate!! Japan", "Naruto"] },
+    { "level": 1, "emoji": "🏴‍☠️⛵🍖", "answer": "One Piece", "options": ["Fairy Tail", "One Piece", "Black Clover", "Bleach"] },
+    { "level": 1, "emoji": "🐉🔮🔥", "answer": "Dragon Ball Z", "options": ["Yu Yu Hakusho", "Dragon Ball Z", "Saint Seiya", "Fist of the North Star"] },
+    { "level": 1, "emoji": "🧱⚔️🪽", "answer": "Attack on Titan", "options": ["86", "Attack on Titan", "Vinland Saga", "The Promised Neverland"] },
+    { "level": 1, "emoji": "👊🌀👹", "answer": "Jujutsu Kaisen", "options": ["Chainsaw Man", "Demon Slayer", "Jujutsu Kaisen", "Blue Exorcist"] },
+    { "level": 1, "emoji": "🦸‍♂️🏫💥", "answer": "My Hero Academia", "options": ["One Punch Man", "Mob Psycho 100", "My Hero Academia", "Tiger & Bunny"] },
+    { "level": 1, "emoji": "📓🍎💀", "answer": "Death Note", "options": ["Death Note", "Monster", "Psycho-Pass", "Erased"] },
+    { "level": 1, "emoji": "🕵️‍♂️👨‍👩‍👧‍👦🐶", "answer": "Spy x Family", "options": ["Buddy Daddies", "Spy x Family", "Sakamoto Days", "The Yakuza's Guide to Babysitting"] },
+    { "level": 1, "emoji": "🦾⚗️🔥", "answer": "Fullmetal Alchemist: Brotherhood", "options": ["D.Gray-man", "Soul Eater", "Fullmetal Alchemist: Brotherhood", "Blue Exorcist"] },
+    { "level": 1, "emoji": "🎣🕷️👦", "answer": "Hunter x Hunter", "options": ["Yu Yu Hakusho", "Hunter x Hunter", "Dragon Ball Z", "Black Clover"] },
+    { "level": 1, "emoji": "👁️🩸👹", "answer": "Tokyo Ghoul", "options": ["Parasyte: The Maxim", "Tokyo Ghoul", "Ajin: Demi-Human", "Devilman Crybaby"] },
+    { "level": 1, "emoji": "🎮⚔️✨", "answer": "Sword Art Online", "options": ["Log Horizon", "No Game No Life", "Sword Art Online", "Overlord"] },
+    { "level": 1, "emoji": "⭐🧢👊", "answer": "JoJo's Bizarre Adventure", "options": ["Baki", "JoJo's Bizarre Adventure", "Fist of the North Star", "Golden Kamuy"] },
+    { "level": 1, "emoji": "⚡🐭🔴", "answer": "Pokémon", "options": ["Digimon Adventure", "Yo-kai Watch", "Pokémon", "Beyblade"] },
+    { "level": 1, "emoji": "⚔️🧡👻", "answer": "Bleach", "options": ["Yu Yu Hakusho", "One Piece", "Bleach", "Soul Eater"] },
+    { "level": 1, "emoji": "🪚🩸😈", "answer": "Chainsaw Man", "options": ["Dorohedoro", "Jujutsu Kaisen", "Chainsaw Man", "Devilman Crybaby"] },
+    { "level": 1, "emoji": "👊🦸‍♂️🌍", "answer": "One Punch Man", "options": ["My Hero Academia", "Mob Psycho 100", "One Punch Man", "Mashle: Magic and Muscles"] },
+
+    { "level": 2, "emoji": "☄️🌌🔁", "answer": "Your Name", "options": ["Weathering with You", "A Silent Voice", "Your Name", "Suzume"] },
+    { "level": 2, "emoji": "🐉🌊👻", "answer": "Spirited Away", "options": ["Princess Mononoke", "Spirited Away", "Howl's Moving Castle", "Ponyo"] },
+    { "level": 2, "emoji": "♟️🤖👑", "answer": "Code Geass", "options": ["Death Note", "86", "Code Geass", "Aldnoah.Zero"] },
+    { "level": 2, "emoji": "🤖🧠🌆", "answer": "Neon Genesis Evangelion", "options": ["Eureka Seven", "Darling in the Franxx", "Neon Genesis Evangelion", "RahXephon"] },
+    { "level": 2, "emoji": "⏳📱🔬", "answer": "Steins;Gate", "options": ["Erased", "Steins;Gate", "The Girl Who Leapt Through Time", "Summer Time Rendering"] },
+    { "level": 2, "emoji": "🧝‍♀️✨🪦", "answer": "Frieren: Beyond Journey's End", "options": ["The Ancient Magus' Bride", "Violet Evergarden", "Frieren: Beyond Journey's End", "To Your Eternity"] },
+    { "level": 2, "emoji": "🚀🤠🎷", "answer": "Cowboy Bebop", "options": ["Space Dandy", "Trigun", "Cowboy Bebop", "Outlaw Star"] },
+    { "level": 2, "emoji": "🌙🎀✨", "answer": "Sailor Moon", "options": ["Cardcaptor Sakura", "Pretty Cure", "Sailor Moon", "Tokyo Mew Mew"] },
+    { "level": 2, "emoji": "👻💪😐", "answer": "Mob Psycho 100", "options": ["Mob Psycho 100", "One Punch Man", "Saiki K.", "The Disastrous Life of Saiki K."] },
+    { "level": 2, "emoji": "🛡️🛶⚔️", "answer": "Vinland Saga", "options": ["Vinland Saga", "Golden Kamuy", "Berserk", "Kingdom"] },
+    { "level": 2, "emoji": "🍀⚔️🧙", "answer": "Black Clover", "options": ["Fairy Tail", "Black Clover", "Magi: The Labyrinth of Magic", "The Seven Deadly Sins"] },
+    { "level": 2, "emoji": "🧪🪨🌍", "answer": "Dr. Stone", "options": ["Cells at Work!", "Dr. Stone", "Silver Spoon", "Planetes"] },
+    { "level": 2, "emoji": "🔁🧙‍♂️🐉", "answer": "Re:Zero - Starting Life in Another World", "options": ["Konosuba", "Re:Zero - Starting Life in Another World", "Overlord", "The Rising of the Shield Hero"] },
+    { "level": 2, "emoji": "💑📚😂", "answer": "Kaguya-sama: Love Is War", "options": ["Monthly Girls' Nozaki-kun", "Kaguya-sama: Love Is War", "Toradora!", "The Quintessential Quintuplets"] },
+    { "level": 2, "emoji": "🏫🧑‍🎓🔪", "answer": "Assassination Classroom", "options": ["Classroom of the Elite", "Assassination Classroom", "The Irregular at Magic High School", "Danganronpa"] },
+    { "level": 2, "emoji": "🧛‍♂️🔫🩸", "answer": "Hellsing Ultimate", "options": ["Trinity Blood", "Vampire Hunter D", "Hellsing Ultimate", "Blood+"] },
+    { "level": 2, "emoji": "🏍️🩸🏫", "answer": "Tokyo Revengers", "options": ["Wind Breaker", "Tokyo Revengers", "Durarara!!", "Bucchigiri?!"] },
+    { "level": 2, "emoji": "⚽🔵🔥", "answer": "Blue Lock", "options": ["Aoashi", "Blue Lock", "Days", "Captain Tsubasa"] },
+    { "level": 2, "emoji": "🏀🔥👟", "answer": "Slam Dunk", "options": ["Kuroko's Basketball", "Real", "Slam Dunk", "Ahiru no Sora"] },
+    { "level": 2, "emoji": "🚗💨🏁", "answer": "Initial D", "options": ["Wangan Midnight", "Initial D", "MF Ghost", "Over Rev!"] },
+
+    { "level": 3, "emoji": "🧚‍♀️🔥🐲", "answer": "Fairy Tail", "options": ["Fairy Tail", "Black Clover", "Edens Zero", "Magi: The Labyrinth of Magic"] },
+    { "level": 3, "emoji": "👿⚔️🛡️", "answer": "The Seven Deadly Sins", "options": ["The Seven Deadly Sins", "Blue Exorcist", "Seraph of the End", "Akame ga Kill!"] },
+    { "level": 3, "emoji": "🔎🕵️‍♂️🕰️", "answer": "Detective Conan", "options": ["Kindaichi Case Files", "Detective Conan", "The Millionaire Detective", "Gosick"] },
+    { "level": 3, "emoji": "🐲💻👦", "answer": "Digimon Adventure", "options": ["Pokémon", "Digimon Adventure", "Monster Rancher", "Yu-Gi-Oh!"] },
+    { "level": 3, "emoji": "🐕👘🌙", "answer": "Inuyasha", "options": ["Inuyasha", "Rurouni Kenshin", "Kamisama Kiss", "Yashahime: Princess Half-Demon"] },
+    { "level": 3, "emoji": "👊👻🧑‍🎓", "answer": "Yu Yu Hakusho", "options": ["Yu Yu Hakusho", "Bleach", "Shaman King", "Hunter x Hunter"] },
+    { "level": 3, "emoji": "⚔️🌸🗾", "answer": "Rurouni Kenshin", "options": ["Samurai Champloo", "Rurouni Kenshin", "Gintama", "Dororo"] },
+    { "level": 3, "emoji": "🍡🍶😂", "answer": "Gintama", "options": ["Gintama", "Sket Dance", "Saiki K.", "Daily Lives of High School Boys"] },
+    { "level": 3, "emoji": "🏍️🔴🌆", "answer": "Akira", "options": ["Ghost in the Shell", "Akira", "Metropolis", "Paprika"] },
+    { "level": 3, "emoji": "🐺🌳⚔️", "answer": "Princess Mononoke", "options": ["Nausicaä of the Valley of the Wind", "Princess Mononoke", "The Boy and the Heron", "Pom Poko"] },
+    { "level": 3, "emoji": "🏰🧙‍♂️🔥", "answer": "Howl's Moving Castle", "options": ["Howl's Moving Castle", "Castle in the Sky", "Spirited Away", "The Cat Returns"] },
+    { "level": 3, "emoji": "🌧️👟☀️", "answer": "Weathering with You", "options": ["The Garden of Words", "Weathering with You", "Your Name", "Suzume"] },
+    { "level": 3, "emoji": "🤟📚🌸", "answer": "A Silent Voice", "options": ["A Silent Voice", "I Want to Eat Your Pancreas", "The Anthem of the Heart", "Josee, the Tiger and the Fish"] },
+    { "level": 3, "emoji": "🧹🐈‍⬛🌊", "answer": "Kiki's Delivery Service", "options": ["Mary and the Witch's Flower", "Kiki's Delivery Service", "A Whisker Away", "The Secret World of Arrietty"] },
+    { "level": 3, "emoji": "🐺🦌🏫", "answer": "Beastars", "options": ["Odd Taxi", "Beastars", "Aggretsuko", "BNA: Brand New Animal"] },
+    { "level": 3, "emoji": "🧒🏝️😱", "answer": "The Promised Neverland", "options": ["Made in Abyss", "Shadows House", "The Promised Neverland", "School-Live!"] },
+    { "level": 3, "emoji": "🦠👽🧤", "answer": "Parasyte: The Maxim", "options": ["Ajin: Demi-Human", "Tokyo Ghoul", "Parasyte: The Maxim", "Inuyashiki"] },
+    { "level": 3, "emoji": "⏪🧒❄️", "answer": "Erased", "options": ["Steins;Gate", "Erased", "Orange", "Summer Time Rendering"] },
+    { "level": 3, "emoji": "🦸‍♀️🗡️🏙️", "answer": "Noragami", "options": ["Noragami", "Blue Exorcist", "Soul Eater", "Seraph of the End"] },
+    { "level": 3, "emoji": "🔫🕶️🌃", "answer": "Black Lagoon", "options": ["Jormungand", "Black Lagoon", "Gangsta.", "Baccano!"] },
+
+    { "level": 4, "emoji": "✉️🌸🦾", "answer": "Violet Evergarden", "options": ["Violet Evergarden", "Frieren: Beyond Journey's End", "The Ancient Magus' Bride", "Maquia: When the Promised Flower Blooms"] },
+    { "level": 4, "emoji": "🎻🎹🌸", "answer": "Your Lie in April", "options": ["Nodame Cantabile", "Sound! Euphonium", "Your Lie in April", "Kids on the Slope"] },
+    { "level": 4, "emoji": "🎸🤘🪨", "answer": "Bocchi the Rock!", "options": ["K-On!", "Bocchi the Rock!", "Nana", "Given"] },
+    { "level": 4, "emoji": "🎸☕🎶", "answer": "K-On!", "options": ["Bocchi the Rock!", "K-On!", "Sound! Euphonium", "Carole & Tuesday"] },
+    { "level": 4, "emoji": "🏊‍♂️💧🏆", "answer": "Free!", "options": ["Yuri!!! on Ice", "Free!", "Tsurune", "Sk8 the Infinity"] },
+    { "level": 4, "emoji": "⛸️❄️🏅", "answer": "Yuri!!! on Ice", "options": ["Free!", "Yuri!!! on Ice", "Sk8 the Infinity", "Tsurune"] },
+    { "level": 4, "emoji": "🌀🛡️🗡️", "answer": "The Rising of the Shield Hero", "options": ["The Rising of the Shield Hero", "Overlord", "Re:Zero", "Arifureta: From Commonplace to World's Strongest"] },
+    { "level": 4, "emoji": "💀🧙‍♂️🏰", "answer": "Overlord", "options": ["Overlord", "No Game No Life", "Log Horizon", "The Saga of Tanya the Evil"] },
+    { "level": 4, "emoji": "🌀🐉🍦", "answer": "That Time I Got Reincarnated as a Slime", "options": ["Konosuba", "That Time I Got Reincarnated as a Slime", "Overlord", "The Rising of the Shield Hero"] },
+    { "level": 4, "emoji": "🕳️🧒🦴", "answer": "Made in Abyss", "options": ["The Promised Neverland", "Made in Abyss", "Land of the Lustrous", "Girls' Last Tour"] },
+    { "level": 4, "emoji": "👑🗡️🤴", "answer": "Ranking of Kings", "options": ["Ranking of Kings", "The Seven Deadly Sins", "The Heroic Legend of Arslan", "Magi: Adventure of Sinbad"] },
+    { "level": 4, "emoji": "🚔🧠🔫", "answer": "Psycho-Pass", "options": ["Ghost in the Shell: Stand Alone Complex", "Psycho-Pass", "Ergo Proxy", "ID: Invaded"] },
+    { "level": 4, "emoji": "🕵️‍♂️🧠🔍", "answer": "Monster", "options": ["Psycho-Pass", "Monster", "Pluto", "Death Note"] },
+    { "level": 4, "emoji": "🎭🪞🩸", "answer": "Perfect Blue", "options": ["Paprika", "Perfect Blue", "Millennium Actress", "Tokyo Godfathers"] },
+    { "level": 4, "emoji": "💤🌀🎭", "answer": "Paprika", "options": ["Paprika", "Perfect Blue", "Millennium Actress", "The Girl Who Leapt Through Time"] },
+    { "level": 4, "emoji": "🐱📚👻", "answer": "Natsume's Book of Friends", "options": ["Mushishi", "Natsume's Book of Friends", "xxxHolic", "The Morose Mononokean"] },
+    { "level": 4, "emoji": "🌿🧪👑", "answer": "The Apothecary Diaries", "options": ["The Apothecary Diaries", "Raven of the Inner Palace", "Spice and Wolf", "Snow White with the Red Hair"] },
+    { "level": 4, "emoji": "📚🐺✨", "answer": "Spice and Wolf", "options": ["The Apothecary Diaries", "Spice and Wolf", "The Ancient Magus' Bride", "Snow White with the Red Hair"] },
+    { "level": 4, "emoji": "🐕‍🦺🌸🧑‍🎓", "answer": "Bungo Stray Dogs", "options": ["Bungo Stray Dogs", "Durarara!!", "Kekkai Sensen", "Noragami"] },
+    { "level": 4, "emoji": "💍👰‍♀️👨‍👩‍👧", "answer": "The Quintessential Quintuplets", "options": ["We Never Learn", "The Quintessential Quintuplets", "Nisekoi", "Rent-A-Girlfriend"] },
+
+    { "level": 5, "emoji": "🔫🤠🌵", "answer": "Trigun", "options": ["Cowboy Bebop", "Trigun", "Outlaw Star", "Desert Punk"] },
+    { "level": 5, "emoji": "🗡️🎷🌊", "answer": "Samurai Champloo", "options": ["Rurouni Kenshin", "Samurai Champloo", "Afro Samurai", "Dororo"] },
+    { "level": 5, "emoji": "🗡️🩸👹", "answer": "Berserk", "options": ["Claymore", "Berserk", "Vinland Saga", "Goblin Slayer"] },
+    { "level": 5, "emoji": "🤖🧠👮", "answer": "Ghost in the Shell: Stand Alone Complex", "options": ["Psycho-Pass", "Ghost in the Shell: Stand Alone Complex", "Appleseed", "Akira"] },
+    { "level": 5, "emoji": "🤖🌙🕵️", "answer": "Pluto", "options": ["Astro Boy", "Pluto", "Metropolis", "Time of Eve"] },
+    { "level": 5, "emoji": "🥋🐼💦", "answer": "Ranma ½", "options": ["Ranma ½", "Inuyasha", "Urusei Yatsura", "Maison Ikkoku"] },
+    { "level": 5, "emoji": "🃏🌸✨", "answer": "Cardcaptor Sakura", "options": ["Magic Knight Rayearth", "Cardcaptor Sakura", "Sailor Moon", "Ojamajo Doremi"] },
+    { "level": 5, "emoji": "🎩🔫🚘", "answer": "Lupin the 3rd", "options": ["City Hunter", "Lupin the 3rd", "The Big O", "Cobra"] },
+    { "level": 5, "emoji": "🤖🚀👦", "answer": "Astro Boy", "options": ["Astro Boy", "Tetsujin 28-go", "Cyborg 009", "Space Battleship Yamato"] },
+    { "level": 5, "emoji": "🏰☁️💎", "answer": "Castle in the Sky", "options": ["Castle in the Sky", "Howl's Moving Castle", "Nausicaä of the Valley of the Wind", "The Castle of Cagliostro"] },
+    { "level": 5, "emoji": "🪶🧒🪶", "answer": "The Boy and the Heron", "options": ["The Boy and the Heron", "Spirited Away", "When Marnie Was There", "The Wind Rises"] },
+    { "level": 5, "emoji": "🌧️🌿👫", "answer": "The Garden of Words", "options": ["The Garden of Words", "5 Centimeters per Second", "Flavors of Youth", "Whisper of the Heart"] },
+    { "level": 5, "emoji": "🚉🌸💌", "answer": "5 Centimeters per Second", "options": ["The Garden of Words", "Your Name", "5 Centimeters per Second", "The Place Promised in Our Early Days"] },
+    { "level": 5, "emoji": "🧠😂⚡", "answer": "The Disastrous Life of Saiki K.", "options": ["Haven't You Heard? I'm Sakamoto", "The Disastrous Life of Saiki K.", "Gintama", "Mob Psycho 100"] },
+    { "level": 5, "emoji": "🏝️🎨🙂", "answer": "Barakamon", "options": ["Silver Spoon", "Barakamon", "Usagi Drop", "Non Non Biyori"] },
+    { "level": 5, "emoji": "🦋🌿👁️", "answer": "Mushishi", "options": ["Mushishi", "Natsume's Book of Friends", "Mononoke", "Kino's Journey"] },
+    { "level": 5, "emoji": "🎺🎼🏫", "answer": "Sound! Euphonium", "options": ["Kids on the Slope", "Your Lie in April", "Sound! Euphonium", "Nodame Cantabile"] },
+    { "level": 5, "emoji": "🏃‍♂️🏃‍♀️🏅", "answer": "Run with the Wind", "options": ["Run with the Wind", "Free!", "Haikyuu!!", "Tsurune"] },
+    { "level": 5, "emoji": "🎴🖐️🏆", "answer": "Chihayafuru", "options": ["Hikaru no Go", "Chihayafuru", "March Comes in Like a Lion", "The Tatami Galaxy"] },
+    { "level": 5, "emoji": "♟️🦁🌸", "answer": "March Comes in Like a Lion", "options": ["March Comes in Like a Lion", "Chihayafuru", "Honey and Clover", "Shogi no Ō"] }
+  ]
+}

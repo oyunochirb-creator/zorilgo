@@ -7,8 +7,8 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: #030712;
-  color: #f3f4f6;
+  background-color: #f0f9ff;
+  color: #0f172a;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -25,14 +25,14 @@ code, pre, .font-mono {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #030712;
+  background: #e0f2fe;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1f2937;
+  background: #7dd3fc;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #374151;
+  background: #38bdf8;
 }
 
 /* Radar pulse animation */
@@ -64,3 +64,138 @@ code, pre, .font-mono {
 .animate-pulse-slow {
   animation: pulse-slow 6s ease-in-out infinite;
 }
+
+@keyframes anime-bounce {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.03);
+  }
+}
+
+.animate-anime-bounce {
+  animation: anime-bounce 0.9s ease-in-out infinite;
+}
+
+@keyframes thumb-wave {
+  0%, 100% {
+    transform: translate(166px, 128px) rotate(0deg);
+  }
+  50% {
+    transform: translate(166px, 122px) rotate(-8deg);
+  }
+}
+
+.animate-thumb-wave {
+  animation: thumb-wave 0.6s ease-in-out infinite;
+}
+
+@keyframes sparkle-pop {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(0.92);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+.animate-sparkle-pop {
+  animation: sparkle-pop 0.7s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes battle-shake {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(-3px, 2px);
+  }
+  40% {
+    transform: translate(3px, -2px);
+  }
+  60% {
+    transform: translate(-2px, -2px);
+  }
+  80% {
+    transform: translate(2px, 2px);
+  }
+}
+
+.animate-battle-shake {
+  animation: battle-shake 0.35s linear infinite;
+}
+
+@keyframes clash-pulse {
+  0%, 100% {
+    transform: scale(0.92);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+}
+
+.animate-clash-pulse {
+  animation: clash-pulse 0.4s ease-in-out infinite;
+  transform-origin: 180px 100px;
+}
+
+@keyframes fighter-left {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.animate-fighter-left {
+  animation: fighter-left 0.35s ease-in-out infinite;
+}
+
+@keyframes fighter-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+}
+
+.animate-fighter-right {
+  animation: fighter-right 0.35s ease-in-out infinite;
+}
+
+@keyframes feedback-bar {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}
+
+.animate-feedback-bar {
+  transform-origin: left center;
+  animation: feedback-bar 3s linear forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-anime-bounce,
+  .animate-thumb-wave,
+  .animate-sparkle-pop,
+  .animate-battle-shake,
+  .animate-clash-pulse,
+  .animate-fighter-left,
+  .animate-fighter-right,
+  .animate-radar-sweep,
+  .animate-pulse-slow {
+    animation: none;
+  }
+}
+

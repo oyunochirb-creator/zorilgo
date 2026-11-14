@@ -14,11 +14,7 @@ export function StudyTracker() {
       prev.map((item) => {
         if (item.id === id) {
           const nextStatus =
-            item.status === 'completed'
-              ? 'in_progress'
-              : item.status === 'in_progress'
-              ? 'completed'
-              : 'in_progress';
+            item.status === 'completed' ? 'in_progress' : 'completed';
           return { ...item, status: nextStatus };
         }
         return item;
@@ -41,7 +37,7 @@ export function StudyTracker() {
       target: newTarget.trim(),
       type,
       status: 'in_progress',
-      notes: newNotes.trim() || 'Хичээл зүтгэл гарган амжилт гаргах зорилготой.',
+      notes: newNotes.trim() || 'Олимпиад ба хичээлийн бэлтгэл.',
     };
 
     setItems([newItem, ...items]);
@@ -51,86 +47,79 @@ export function StudyTracker() {
   };
 
   return (
-    <section id="tracker" className="py-16 md:py-24 border-t border-gray-800/80 bg-gray-950/40">
+    <section id="tracker" className="py-16 md:py-20 border-t border-white/60 bg-white/30 backdrop-blur-[2px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-          <div className="space-y-3 max-w-2xl">
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800 text-xs font-mono text-cyan-400">
-              <span>ACADEMIC FOCUS // ОЛИМПИАД БА СУРЛАГА</span>
-            </div>
-            <h2 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
-              Математик, Үндэсний бичиг, Монгол хэлний Бэлтгэл
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+          <div className="inline-block px-4 py-2.5 rounded-2xl bg-white/80 border border-white/90 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+              Хичээл &amp; Олимпиадын Бэлтгэл
             </h2>
-            <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              IT инженер болон тоглоомын гүн гүнзгий өгүүлэмж бүтээхэд шаардлагатай логик сэтгэлгээ (Математик) 
-              болон эх хэлний баялаг сан (Монгол хэл, Үндэсний бичиг)-ийг олимпиадын түвшинд эзэмших төлөвлөгөө.
+            <p className="text-slate-600 text-sm mt-1">
+              Математик · Үндэсний бичиг · Монгол хэл · Код
             </p>
           </div>
 
           <button
+            type="button"
             onClick={() => setShowAddModal(!showAddModal)}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-cyan-500 hover:bg-cyan-400 text-gray-950 transition-all shadow-md self-start md:self-auto cursor-pointer"
+            className="px-4 py-2.5 rounded-xl text-xs font-bold bg-sky-500 hover:bg-sky-600 text-white shadow-md shadow-sky-500/20 transition-colors self-start sm:self-auto cursor-pointer whitespace-nowrap"
           >
-            <span>+ Шинэ зорилго / сэдэв нэмэх</span>
+            + Зорилго нэмэх
           </button>
         </div>
 
-        {/* Шинэ зорилго нэмэх Form */}
         {showAddModal && (
           <form
             onSubmit={handleAddItem}
-            className="mb-8 p-6 rounded-2xl bg-gray-900 border border-cyan-500/50 space-y-4 max-w-2xl animate-fade-in"
+            className="mb-8 p-6 rounded-2xl bg-white/90 backdrop-blur-md border border-sky-200 shadow-lg space-y-4 max-w-2xl"
           >
-            <h4 className="text-sm font-bold text-white uppercase font-mono tracking-wider">
-              Шинэ хичээлийн зорилго нэмэх
-            </h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs text-gray-400 mb-1">Хичээл / Чиглэл</label>
+                <label className="block text-xs font-semibold text-slate-600 mb-1">Хичээл</label>
                 <select
                   value={newSubject}
                   onChange={(e) => setNewSubject(e.target.value)}
-                  className="w-full bg-gray-950 border border-gray-800 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-cyan-500"
+                  className="w-full bg-sky-50/70 border border-sky-200 rounded-lg p-2.5 text-xs text-slate-900 focus:outline-none focus:border-sky-500"
                 >
-                  <option value="Математик">Математик (Логик, Геометр)</option>
-                  <option value="Үндэсний бичиг">Үндэсний бичиг (Уран бичлэг)</option>
-                  <option value="Монгол хэл">Монгол хэл (Өгүүлэмж, Дүрийн зохиол)</option>
-                  <option value="Код бичих">Код бичих (Game Logic &amp; IT)</option>
+                  <option value="Математик">Математик</option>
+                  <option value="Үндэсний бичиг">Үндэсний бичиг</option>
+                  <option value="Монгол хэл">Монгол хэл</option>
+                  <option value="Код бичих">Код бичих</option>
                 </select>
               </div>
               <div>
-                <label className="block text-xs text-gray-400 mb-1">Зорилтот сэдэв / Олимпиад</label>
+                <label className="block text-xs font-semibold text-slate-600 mb-1">Зорилго</label>
                 <input
                   type="text"
-                  placeholder="Жишээ: Дүүргийн математикийн олимпиад"
+                  placeholder="Олимпиад эсвэл сэдэв"
                   value={newTarget}
                   onChange={(e) => setNewTarget(e.target.value)}
-                  className="w-full bg-gray-950 border border-gray-800 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-cyan-500"
+                  className="w-full bg-sky-50/70 border border-sky-200 rounded-lg p-2.5 text-xs text-slate-900 focus:outline-none focus:border-sky-500"
                   required
                 />
               </div>
             </div>
             <div>
-              <label className="block text-xs text-gray-400 mb-1">Тэмдэглэл / Ач холбогдол</label>
+              <label className="block text-xs font-semibold text-slate-600 mb-1">Тэмдэглэл</label>
               <input
                 type="text"
-                placeholder="Жишээ: Тоглоомын физик тооцоололд ашиглах"
+                placeholder="Товч тайлбар"
                 value={newNotes}
                 onChange={(e) => setNewNotes(e.target.value)}
-                className="w-full bg-gray-950 border border-gray-800 rounded-lg p-2.5 text-xs text-white focus:outline-none focus:border-cyan-500"
+                className="w-full bg-sky-50/70 border border-sky-200 rounded-lg p-2.5 text-xs text-slate-900 focus:outline-none focus:border-sky-500"
               />
             </div>
-            <div className="flex justify-end gap-2 pt-2">
+            <div className="flex justify-end gap-2">
               <button
                 type="button"
                 onClick={() => setShowAddModal(false)}
-                className="px-3.5 py-1.5 rounded-lg text-xs text-gray-400 hover:text-white"
+                className="px-3.5 py-2 rounded-lg text-xs font-semibold text-slate-600 hover:text-slate-900 cursor-pointer"
               >
                 Болих
               </button>
               <button
                 type="submit"
-                className="px-4 py-1.5 rounded-lg text-xs font-bold bg-cyan-400 text-gray-950 hover:bg-cyan-300"
+                className="px-4 py-2 rounded-lg text-xs font-bold bg-sky-500 text-white hover:bg-sky-600 cursor-pointer"
               >
                 Хадгалах
               </button>
@@ -138,7 +127,6 @@ export function StudyTracker() {
           </form>
         )}
 
-        {/* Жагсаалтын картууд */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {items.map((item) => {
             const isDone = item.status === 'completed';
@@ -146,45 +134,30 @@ export function StudyTracker() {
             return (
               <div
                 key={item.id}
-                className={`p-5 rounded-2xl border transition-all flex items-start justify-between gap-4 ${
+                className={`p-5 rounded-2xl border backdrop-blur-md transition-colors flex items-start justify-between gap-4 shadow-md shadow-sky-900/5 ${
                   isDone
-                    ? 'bg-gray-900/40 border-gray-800/60 opacity-80'
-                    : 'bg-gray-900/90 border-gray-800 hover:border-cyan-900/50 shadow-md'
+                    ? 'bg-white/70 border-emerald-200 opacity-85'
+                    : 'bg-white/85 border-white/90'
                 }`}
               >
-                <div className="space-y-1.5 flex-1">
-                  <div className="flex items-center gap-2">
-                    <span
-                      className={`text-[10px] font-mono px-2 py-0.5 rounded font-bold uppercase tracking-wider ${
-                        item.type === 'math'
-                          ? 'bg-blue-950 text-blue-300 border border-blue-800'
-                          : item.type === 'mongolian_script'
-                          ? 'bg-amber-950 text-amber-300 border border-amber-800'
-                          : item.type === 'mongolian_language'
-                          ? 'bg-purple-950 text-purple-300 border border-purple-800'
-                          : 'bg-cyan-950 text-cyan-300 border border-cyan-800'
-                      }`}
-                    >
-                      {item.subject}
-                    </span>
-                    <span
-                      className={`text-[11px] font-mono ${
-                        isDone ? 'text-emerald-400' : 'text-cyan-400'
-                      }`}
-                    >
-                      {isDone ? '✓ Биелсэн' : '⏳ Идэвхтэй бэлтгэл'}
+                <div className="space-y-1 flex-1">
+                  <div className="flex items-center gap-2 text-xs font-mono text-slate-500">
+                    <span className="text-sky-600 font-bold">{item.subject}</span>
+                    <span aria-hidden="true">·</span>
+                    <span className={isDone ? 'text-emerald-600 font-semibold' : 'text-slate-500'}>
+                      {isDone ? 'Биелсэн' : 'Үргэлжилж байна'}
                     </span>
                   </div>
 
-                  <h4
-                    className={`text-base font-bold text-white leading-snug ${
-                      isDone ? 'line-through text-gray-400' : ''
+                  <h3
+                    className={`text-base font-bold text-slate-900 leading-snug ${
+                      isDone ? 'line-through text-slate-500' : ''
                     }`}
                   >
                     {item.target}
-                  </h4>
+                  </h3>
 
-                  <p className="text-xs text-gray-400 leading-relaxed">
+                  <p className="text-xs text-slate-600">
                     {item.notes}
                   </p>
                 </div>
@@ -192,11 +165,11 @@ export function StudyTracker() {
                 <button
                   type="button"
                   onClick={() => toggleStatus(item.id)}
-                  title={isDone ? 'Дуусаагүй болгох' : 'Биелсэн гэж тэмдэглэх'}
-                  className={`p-2 rounded-xl border transition-all cursor-pointer ${
+                  aria-label={isDone ? 'Дуусаагүй болгох' : 'Биелсэн болгох'}
+                  className={`p-2 rounded-xl border transition-colors cursor-pointer shrink-0 ${
                     isDone
-                      ? 'bg-emerald-500/20 text-emerald-400 border-emerald-500/40'
-                      : 'bg-gray-800 text-gray-400 border-gray-700 hover:text-white hover:border-cyan-500'
+                      ? 'bg-emerald-50 text-emerald-600 border-emerald-300'
+                      : 'bg-sky-50 text-slate-600 border-sky-200 hover:text-sky-700 hover:border-sky-400'
                   }`}
                 >
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,46 +1,89 @@
 import { useState } from 'react';
+import { BackgroundBackdrop } from './components/BackgroundBackdrop';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
+import { AnimeGuessGame } from './components/animeGuess/AnimeGuessGame';
+import { LeaderboardSection } from './components/LeaderboardSection';
 import { RoadmapSection } from './components/RoadmapSection';
 import { SkillsSection } from './components/SkillsSection';
 import { GameLab } from './components/GameLab';
 import { StudyTracker } from './components/StudyTracker';
 import { Footer } from './components/Footer';
 
+type ViewMode = 'portfolio' | 'anime-guess' | '2d-game' | 'leaderboard';
+
+function getInitialView(): ViewMode {
+  if (typeof window === 'undefined') return 'portfolio';
+  const tab = new URLSearchParams(window.location.search).get('tab');
+  if (tab === 'anime-guess' || tab === '2d-game' || tab === 'leaderboard') {
+    return tab;
+  }
+  return 'portfolio';
+}
+
 export default function App() {
-  const [activeSection, setActiveSection] = useState('hero');
+  const [viewMode, setViewMode] = useState<ViewMode>(getInitialView);
+  const [activeSection, setActiveSection] = useState(
+    viewMode === 'portfolio' ? 'hero' : viewMode
+  );
 
   const handleNavigate = (sectionId: string) => {
     setActiveSection(sectionId);
+    if (viewMode !== 'portfolio') {
+      setViewMode('portfolio');
+      if (typeof window !== 'undefined') {
+        window.history.replaceState({}, '', window.location.pathname);
+      }
+      window.setTimeout(() => {
+        const target = document.getElementById(sectionId);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      }, 50);
+      return;
+    }
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
+  const handleExitStandalone = () => {
+    setViewMode('portfolio');
+    setActiveSection('hero');
+    if (typeof window !== 'undefined') {
+      window.history.replaceState({}, '', window.location.pathname);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-gray-950 text-gray-100 flex flex-col selection:bg-cyan-500 selection:text-black">
-      {/* 1. Навигацийн дээд мөр */}
-      <Navbar activeSection={activeSection} onNavigate={handleNavigate} />
+    <div className="relative min-h-screen text-slate-900 flex flex-col selection:bg-sky-200 selection:text-slate-900">
+      <BackgroundBackdrop />
+      <Navbar
+        activeSection={activeSection}
+        onNavigate={handleNavigate}
+        viewMode={viewMode}
+        onExitStandalone={handleExitStandalone}
+      />
 
-      <main className="flex-1">
-        {/* 2. Нүүр танилцуулга ба Радар терминал */}
-        <HeroSection onExplore={handleNavigate} />
-
-        {/* 3. 10 жилийн алсын хараа ба ойрын зорилтуудын Roadmap */}
-        <RoadmapSection />
-
-        {/* 4. Хэрэгтэй 3 үндсэн чадварын дэлгэрэнгүй зөвлөгөө */}
-        <SkillsSection />
-
-        {/* 5. 2D Тоглоомын Лаборатори (Бодит тоглож болох тоглоом + код тайлбар) */}
-        <GameLab />
-
-        {/* 6. Олимпиад ба Хичээлийн бэлтгэл тэмдэглэгч */}
-        <StudyTracker />
+      <main className="relative z-10 flex-1">
+        {viewMode === 'anime-guess' && (
+          <>
+            <AnimeGuessGame />
+            <LeaderboardSection />
+          </>
+        )}
+        {viewMode === '2d-game' && <GameLab />}
+        {viewMode === 'leaderboard' && <LeaderboardSection />}
+        {viewMode === 'portfolio' && (
+          <>
+            <HeroSection />
+            <RoadmapSection />
+            <SkillsSection />
+            <StudyTracker />
+          </>
+        )}
       </main>
 
-      {/* 7. Хөл хэсэг */}
       <Footer onNavigate={handleNavigate} />
     </div>
   );

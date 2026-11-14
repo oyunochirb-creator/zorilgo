@@ -1,0 +1,626 @@
+[
+  {
+    "emoji": "🍥🍜🦊",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiSTDoq_3P5uem8o8QqY8q3BalA60bn4FHDFqWlT8yjA&s=10",
+    "answer": "Naruto",
+    "options": ["Naruto", "Bleach", "One Piece", "Death Note"]
+  },
+  {
+    "emoji": "⚔️🌊👹",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSODj_pSN3daidImWnZPbHmdiPm5hQsM5kluENQS51NQ&s=10",
+    "answer": "Demon Slayer",
+    "options": ["Naruto", "Bleach", "One Piece", "Death Note"]
+  },
+  {
+    "emoji": "🏐🔥👦",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTikMuhzkSIWFYBpgdujVQp-3XqXaSDJ6IqBdN5SLh5g&s=10",
+    "answer": "Haikyuu",
+    "options": ["Naruto", "Bleach", "One Piece", "Death Note"]
+  },
+  {
+    "emoji": "🔥👨‍🍳⚔️",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJW6K-c7yp-ahDSNV8b-GMuheY1tjV0UI3KnxSZyRBsA&s=10",
+    "answer": "Food wars",
+    "options": ["Naruto", "Bleach", "One Piece", "Death Note"]
+  },
+  {
+    "emoji": "🏴‍☠️⛵🍖",
+    "image": "",
+    "answer": "One Piece",
+    "options": ["Fairy Tail", "One Piece", "Black Clover", "Bleach"]
+  },
+  {
+    "emoji": "🐉🔮🔥",
+    "image": "",
+    "answer": "Dragon Ball Z",
+    "options": ["Yu Yu Hakusho", "Dragon Ball Z", "Saint Seiya", "Fist of the North Star"]
+  },
+  {
+    "emoji": "🧱⚔️🪽",
+    "image": "",
+    "answer": "Attack on Titan",
+    "options": ["86", "Attack on Titan", "Vinland Saga", "The Promised Neverland"]
+  },
+  {
+    "emoji": "👊🌀👹",
+    "image": "",
+    "answer": "Jujutsu Kaisen",
+    "options": ["Chainsaw Man", "Demon Slayer", "Jujutsu Kaisen", "Blue Exorcist"]
+  },
+  {
+    "emoji": "🦸‍♂️🏫💥",
+    "image": "",
+    "answer": "My Hero Academia",
+    "options": ["One Punch Man", "Mob Psycho 100", "My Hero Academia", "Tiger & Bunny"]
+  },
+  {
+    "emoji": "📓🍎💀",
+    "image": "",
+    "answer": "Death Note",
+    "options": ["Death Note", "Monster", "Psycho-Pass", "Erased"]
+  },
+  {
+    "emoji": "🕵️‍♂️👨‍👩‍👧‍👦🐶",
+    "image": "",
+    "answer": "Spy x Family",
+    "options": ["Buddy Daddies", "Spy x Family", "Sakamoto Days", "The Yakuza's Guide to Babysitting"]
+  },
+  {
+    "emoji": "🦾⚗️🔥",
+    "image": "",
+    "answer": "Fullmetal Alchemist: Brotherhood",
+    "options": ["D.Gray-man", "Soul Eater", "Fullmetal Alchemist: Brotherhood", "Blue Exorcist"]
+  },
+  {
+    "emoji": "🎣🕷️👦",
+    "image": "",
+    "answer": "Hunter x Hunter",
+    "options": ["Yu Yu Hakusho", "Hunter x Hunter", "Dragon Ball Z", "Black Clover"]
+  },
+  {
+    "emoji": "👁️🩸👹",
+    "image": "",
+    "answer": "Tokyo Ghoul",
+    "options": ["Parasyte: The Maxim", "Tokyo Ghoul", "Ajin: Demi-Human", "Devilman Crybaby"]
+  },
+  {
+    "emoji": "🎮⚔️✨",
+    "image": "",
+    "answer": "Sword Art Online",
+    "options": ["Log Horizon", "No Game No Life", "Sword Art Online", "Overlord"]
+  },
+  {
+    "emoji": "⭐🧢👊",
+    "image": "",
+    "answer": "JoJo's Bizarre Adventure",
+    "options": ["Baki", "JoJo's Bizarre Adventure", "Fist of the North Star", "Golden Kamuy"]
+  },
+  {
+    "emoji": "⚡🐭🔴",
+    "image": "",
+    "answer": "Pokémon",
+    "options": ["Digimon Adventure", "Yo-kai Watch", "Pokémon", "Beyblade"]
+  },
+  {
+    "emoji": "⚔️🧡👻",
+    "image": "",
+    "answer": "Bleach",
+    "options": ["Yu Yu Hakusho", "One Piece", "Bleach", "Soul Eater"]
+  },
+  {
+    "emoji": "🪚🩸😈",
+    "image": "",
+    "answer": "Chainsaw Man",
+    "options": ["Dorohedoro", "Jujutsu Kaisen", "Chainsaw Man", "Devilman Crybaby"]
+  },
+  {
+    "emoji": "👊🦸‍♂️🌍",
+    "image": "",
+    "answer": "One Punch Man",
+    "options": ["My Hero Academia", "Mob Psycho 100", "One Punch Man", "Mashle: Magic and Muscles"]
+  },
+  {
+    "emoji": "☄️🌌🔁",
+    "image": "",
+    "answer": "Your Name",
+    "options": ["Weathering with You", "A Silent Voice", "Your Name", "Suzume"]
+  },
+  {
+    "emoji": "🐉🌊👻",
+    "image": "",
+    "answer": "Spirited Away",
+    "options": ["Princess Mononoke", "Spirited Away", "Howl's Moving Castle", "Ponyo"]
+  },
+  {
+    "emoji": "♟️🤖👑",
+    "image": "",
+    "answer": "Code Geass",
+    "options": ["Death Note", "86", "Code Geass", "Aldnoah.Zero"]
+  },
+  {
+    "emoji": "🤖🧠🌆",
+    "image": "",
+    "answer": "Neon Genesis Evangelion",
+    "options": ["Eureka Seven", "Darling in the Franxx", "Neon Genesis Evangelion", "RahXephon"]
+  },
+  {
+    "emoji": "⏳📱🔬",
+    "image": "",
+    "answer": "Steins;Gate",
+    "options": ["Erased", "Steins;Gate", "The Girl Who Leapt Through Time", "Summer Time Rendering"]
+  },
+  {
+    "emoji": "🧝‍♀️✨🪦",
+    "image": "",
+    "answer": "Frieren: Beyond Journey's End",
+    "options": ["The Ancient Magus' Bride", "Violet Evergarden", "Frieren: Beyond Journey's End", "To Your Eternity"]
+  },
+  {
+    "emoji": "🚀🤠🎷",
+    "image": "",
+    "answer": "Cowboy Bebop",
+    "options": ["Space Dandy", "Trigun", "Cowboy Bebop", "Outlaw Star"]
+  },
+  {
+    "emoji": "🌙🎀✨",
+    "image": "",
+    "answer": "Sailor Moon",
+    "options": ["Cardcaptor Sakura", "Pretty Cure", "Sailor Moon", "Tokyo Mew Mew"]
+  },
+  {
+    "emoji": "👻💪😐",
+    "image": "",
+    "answer": "Mob Psycho 100",
+    "options": ["Mob Psycho 100", "One Punch Man", "Saiki K.", "The Disastrous Life of Saiki K."]
+  },
+  {
+    "emoji": "🛡️🛶⚔️",
+    "image": "",
+    "answer": "Vinland Saga",
+    "options": ["Vinland Saga", "Golden Kamuy", "Berserk", "Kingdom"]
+  },
+  {
+    "emoji": "🍀⚔️🧙",
+    "image": "",
+    "answer": "Black Clover",
+    "options": ["Fairy Tail", "Black Clover", "Magi: The Labyrinth of Magic", "The Seven Deadly Sins"]
+  },
+  {
+    "emoji": "🧪🪨🌍",
+    "image": "",
+    "answer": "Dr. Stone",
+    "options": ["Cells at Work!", "Dr. Stone", "Silver Spoon", "Planetes"]
+  },
+  {
+    "emoji": "🔁🧙‍♂️🐉",
+    "image": "",
+    "answer": "Re:Zero - Starting Life in Another World",
+    "options": ["Konosuba", "Re:Zero - Starting Life in Another World", "Overlord", "The Rising of the Shield Hero"]
+  },
+  {
+    "emoji": "💑📚😂",
+    "image": "",
+    "answer": "Kaguya-sama: Love Is War",
+    "options": ["Monthly Girls' Nozaki-kun", "Kaguya-sama: Love Is War", "Toradora!", "The Quintessential Quintuplets"]
+  },
+  {
+    "emoji": "🏫🧑‍🎓🔪",
+    "image": "",
+    "answer": "Assassination Classroom",
+    "options": ["Classroom of the Elite", "Assassination Classroom", "The Irregular at Magic High School", "Danganronpa"]
+  },
+  {
+    "emoji": "🧛‍♂️🔫🩸",
+    "image": "",
+    "answer": "Hellsing Ultimate",
+    "options": ["Trinity Blood", "Vampire Hunter D", "Hellsing Ultimate", "Blood+"]
+  },
+  {
+    "emoji": "🏍️🩸🏫",
+    "image": "",
+    "answer": "Tokyo Revengers",
+    "options": ["Wind Breaker", "Tokyo Revengers", "Durarara!!", "Bucchigiri?!"]
+  },
+  {
+    "emoji": "⚽🔵🔥",
+    "image": "",
+    "answer": "Blue Lock",
+    "options": ["Aoashi", "Blue Lock", "Days", "Captain Tsubasa"]
+  },
+  {
+    "emoji": "🏀🔥👟",
+    "image": "",
+    "answer": "Slam Dunk",
+    "options": ["Kuroko's Basketball", "Real", "Slam Dunk", "Ahiru no Sora"]
+  },
+  {
+    "emoji": "🚗💨🏁",
+    "image": "",
+    "answer": "Initial D",
+    "options": ["Wangan Midnight", "Initial D", "MF Ghost", "Over Rev!"]
+  },
+  {
+    "emoji": "🧚‍♀️🔥🐲",
+    "image": "",
+    "answer": "Fairy Tail",
+    "options": ["Fairy Tail", "Black Clover", "Edens Zero", "Magi: The Labyrinth of Magic"]
+  },
+  {
+    "emoji": "👿⚔️🛡️",
+    "image": "",
+    "answer": "The Seven Deadly Sins",
+    "options": ["The Seven Deadly Sins", "Blue Exorcist", "Seraph of the End", "Akame ga Kill!"]
+  },
+  {
+    "emoji": "🔎🕵️‍♂️🕰️",
+    "image": "",
+    "answer": "Detective Conan",
+    "options": ["Kindaichi Case Files", "Detective Conan", "The Millionaire Detective", "Gosick"]
+  },
+  {
+    "emoji": "🐲💻👦",
+    "image": "",
+    "answer": "Digimon Adventure",
+    "options": ["Pokémon", "Digimon Adventure", "Monster Rancher", "Yu-Gi-Oh!"]
+  },
+  {
+    "emoji": "🐕👘🌙",
+    "image": "",
+    "answer": "Inuyasha",
+    "options": ["Inuyasha", "Rurouni Kenshin", "Kamisama Kiss", "Yashahime: Princess Half-Demon"]
+  },
+  {
+    "emoji": "👊👻🧑‍🎓",
+    "image": "",
+    "answer": "Yu Yu Hakusho",
+    "options": ["Yu Yu Hakusho", "Bleach", "Shaman King", "Hunter x Hunter"]
+  },
+  {
+    "emoji": "⚔️🌸🗾",
+    "image": "",
+    "answer": "Rurouni Kenshin",
+    "options": ["Samurai Champloo", "Rurouni Kenshin", "Gintama", "Dororo"]
+  },
+  {
+    "emoji": "🍡🍶😂",
+    "image": "",
+    "answer": "Gintama",
+    "options": ["Gintama", "Sket Dance", "Saiki K.", "Daily Lives of High School Boys"]
+  },
+  {
+    "emoji": "🏍️🔴🌆",
+    "image": "",
+    "answer": "Akira",
+    "options": ["Ghost in the Shell", "Akira", "Metropolis", "Paprika"]
+  },
+  {
+    "emoji": "🐺🌳⚔️",
+    "image": "",
+    "answer": "Princess Mononoke",
+    "options": ["Nausicaä of the Valley of the Wind", "Princess Mononoke", "The Boy and the Heron", "Pom Poko"]
+  },
+  {
+    "emoji": "🏰🧙‍♂️🔥",
+    "image": "",
+    "answer": "Howl's Moving Castle",
+    "options": ["Howl's Moving Castle", "Castle in the Sky", "Spirited Away", "The Cat Returns"]
+  },
+  {
+    "emoji": "🌧️👟☀️",
+    "image": "",
+    "answer": "Weathering with You",
+    "options": ["The Garden of Words", "Weathering with You", "Your Name", "Suzume"]
+  },
+  {
+    "emoji": "🤟📚🌸",
+    "image": "",
+    "answer": "A Silent Voice",
+    "options": ["A Silent Voice", "I Want to Eat Your Pancreas", "The Anthem of the Heart", "Josee, the Tiger and the Fish"]
+  },
+  {
+    "emoji": "🧹🐈‍⬛🌊",
+    "image": "",
+    "answer": "Kiki's Delivery Service",
+    "options": ["Mary and the Witch's Flower", "Kiki's Delivery Service", "A Whisker Away", "The Secret World of Arrietty"]
+  },
+  {
+    "emoji": "🐺🦌🏫",
+    "image": "",
+    "answer": "Beastars",
+    "options": ["Odd Taxi", "Beastars", "Aggretsuko", "BNA: Brand New Animal"]
+  },
+  {
+    "emoji": "🧒🏝️😱",
+    "image": "",
+    "answer": "The Promised Neverland",
+    "options": ["Made in Abyss", "Shadows House", "The Promised Neverland", "School-Live!"]
+  },
+  {
+    "emoji": "🦠👽🧤",
+    "image": "",
+    "answer": "Parasyte: The Maxim",
+    "options": ["Ajin: Demi-Human", "Tokyo Ghoul", "Parasyte: The Maxim", "Inuyashiki"]
+  },
+  {
+    "emoji": "⏪🧒❄️",
+    "image": "",
+    "answer": "Erased",
+    "options": ["Steins;Gate", "Erased", "Orange", "Summer Time Rendering"]
+  },
+  {
+    "emoji": "🦸‍♀️🗡️🏙️",
+    "image": "",
+    "answer": "Noragami",
+    "options": ["Noragami", "Blue Exorcist", "Soul Eater", "Seraph of the End"]
+  },
+  {
+    "emoji": "🔫🕶️🌃",
+    "image": "",
+    "answer": "Black Lagoon",
+    "options": ["Jormungand", "Black Lagoon", "Gangsta.", "Baccano!"]
+  },
+  {
+    "emoji": "✉️🌸🦾",
+    "image": "",
+    "answer": "Violet Evergarden",
+    "options": ["Violet Evergarden", "Frieren: Beyond Journey's End", "The Ancient Magus' Bride", "Maquia: When the Promised Flower Blooms"]
+  },
+  {
+    "emoji": "🎻🎹🌸",
+    "image": "",
+    "answer": "Your Lie in April",
+    "options": ["Nodame Cantabile", "Sound! Euphonium", "Your Lie in April", "Kids on the Slope"]
+  },
+  {
+    "emoji": "🎸🤘🪨",
+    "image": "",
+    "answer": "Bocchi the Rock!",
+    "options": ["K-On!", "Bocchi the Rock!", "Nana", "Given"]
+  },
+  {
+    "emoji": "🎸☕🎶",
+    "image": "",
+    "answer": "K-On!",
+    "options": ["Bocchi the Rock!", "K-On!", "Sound! Euphonium", "Carole & Tuesday"]
+  },
+  {
+    "emoji": "🏊‍♂️💧🏆",
+    "image": "",
+    "answer": "Free!",
+    "options": ["Yuri!!! on Ice", "Free!", "Tsurune", "Sk8 the Infinity"]
+  },
+  {
+    "emoji": "⛸️❄️🏅",
+    "image": "",
+    "answer": "Yuri!!! on Ice",
+    "options": ["Free!", "Yuri!!! on Ice", "Sk8 the Infinity", "Tsurune"]
+  },
+  {
+    "emoji": "🌀🛡️🗡️",
+    "image": "",
+    "answer": "The Rising of the Shield Hero",
+    "options": ["The Rising of the Shield Hero", "Overlord", "Re:Zero", "Arifureta: From Commonplace to World's Strongest"]
+  },
+  {
+    "emoji": "💀🧙‍♂️🏰",
+    "image": "",
+    "answer": "Overlord",
+    "options": ["Overlord", "No Game No Life", "Log Horizon", "The Saga of Tanya the Evil"]
+  },
+  {
+    "emoji": "🌀🐉🍦",
+    "image": "",
+    "answer": "That Time I Got Reincarnated as a Slime",
+    "options": ["Konosuba", "That Time I Got Reincarnated as a Slime", "Overlord", "The Rising of the Shield Hero"]
+  },
+  {
+    "emoji": "🕳️🧒🦴",
+    "image": "",
+    "answer": "Made in Abyss",
+    "options": ["The Promised Neverland", "Made in Abyss", "Land of the Lustrous", "Girls' Last Tour"]
+  },
+  {
+    "emoji": "👑🗡️🤴",
+    "image": "",
+    "answer": "Ranking of Kings",
+    "options": ["Ranking of Kings", "The Seven Deadly Sins", "The Heroic Legend of Arslan", "Magi: Adventure of Sinbad"]
+  },
+  {
+    "emoji": "🚔🧠🔫",
+    "image": "",
+    "answer": "Psycho-Pass",
+    "options": ["Ghost in the Shell: Stand Alone Complex", "Psycho-Pass", "Ergo Proxy", "ID: Invaded"]
+  },
+  {
+    "emoji": "🕵️‍♂️🧠🔍",
+    "image": "",
+    "answer": "Monster",
+    "options": ["Psycho-Pass", "Monster", "Pluto", "Death Note"]
+  },
+  {
+    "emoji": "🎭🪞🩸",
+    "image": "",
+    "answer": "Perfect Blue",
+    "options": ["Paprika", "Perfect Blue", "Millennium Actress", "Tokyo Godfathers"]
+  },
+  {
+    "emoji": "💤🌀🎭",
+    "image": "",
+    "answer": "Paprika",
+    "options": ["Paprika", "Perfect Blue", "Millennium Actress", "The Girl Who Leapt Through Time"]
+  },
+  {
+    "emoji": "🐱📚👻",
+    "image": "",
+    "answer": "Natsume's Book of Friends",
+    "options": ["Mushishi", "Natsume's Book of Friends", "xxxHolic", "The Morose Mononokean"]
+  },
+  {
+    "emoji": "🌿🧪👑",
+    "image": "",
+    "answer": "The Apothecary Diaries",
+    "options": ["The Apothecary Diaries", "Raven of the Inner Palace", "Spice and Wolf", "Snow White with the Red Hair"]
+  },
+  {
+    "emoji": "📚🐺✨",
+    "image": "",
+    "answer": "Spice and Wolf",
+    "options": ["The Apothecary Diaries", "Spice and Wolf", "The Ancient Magus' Bride", "Snow White with the Red Hair"]
+  },
+  {
+    "emoji": "🐕‍🦺🌸🧑‍🎓",
+    "image": "",
+    "answer": "Bungo Stray Dogs",
+    "options": ["Bungo Stray Dogs", "Durarara!!", "Kekkai Sensen", "Noragami"]
+  },
+  {
+    "emoji": "💍👰‍♀️👨‍👩‍👧",
+    "image": "",
+    "answer": "The Quintessential Quintuplets",
+    "options": ["We Never Learn", "The Quintessential Quintuplets", "Nisekoi", "Rent-A-Girlfriend"]
+  },
+  {
+    "emoji": "🔫🤠🌵",
+    "image": "",
+    "answer": "Trigun",
+    "options": ["Cowboy Bebop", "Trigun", "Outlaw Star", "Desert Punk"]
+  },
+  {
+    "emoji": "🗡️🎷🌊",
+    "image": "",
+    "answer": "Samurai Champloo",
+    "options": ["Rurouni Kenshin", "Samurai Champloo", "Afro Samurai", "Dororo"]
+  },
+  {
+    "emoji": "🗡️🩸👹",
+    "image": "",
+    "answer": "Berserk",
+    "options": ["Claymore", "Berserk", "Vinland Saga", "Goblin Slayer"]
+  },
+  {
+    "emoji": "🤖🧠👮",
+    "image": "",
+    "answer": "Ghost in the Shell: Stand Alone Complex",
+    "options": ["Psycho-Pass", "Ghost in the Shell: Stand Alone Complex", "Appleseed", "Akira"]
+  },
+  {
+    "emoji": "🤖🌙🕵️",
+    "image": "",
+    "answer": "Pluto",
+    "options": ["Astro Boy", "Pluto", "Metropolis", "Time of Eve"]
+  },
+  {
+    "emoji": "🥋🐼💦",
+    "image": "",
+    "answer": "Ranma ½",
+    "options": ["Ranma ½", "Inuyasha", "Urusei Yatsura", "Maison Ikkoku"]
+  },
+  {
+    "emoji": "🃏🌸✨",
+    "image": "",
+    "answer": "Cardcaptor Sakura",
+    "options": ["Magic Knight Rayearth", "Cardcaptor Sakura", "Sailor Moon", "Ojamajo Doremi"]
+  },
+  {
+    "emoji": "🎩🔫🚘",
+    "image": "",
+    "answer": "Lupin the 3rd",
+    "options": ["City Hunter", "Lupin the 3rd", "The Big O", "Cobra"]
+  },
+  {
+    "emoji": "🤖🚀👦",
+    "image": "",
+    "answer": "Astro Boy",
+    "options": ["Astro Boy", "Tetsujin 28-go", "Cyborg 009", "Space Battleship Yamato"]
+  },
+  {
+    "emoji": "🏰☁️💎",
+    "image": "",
+    "answer": "Castle in the Sky",
+    "options": ["Castle in the Sky", "Howl's Moving Castle", "Nausicaä of the Valley of the Wind", "The Castle of Cagliostro"]
+  },
+  {
+    "emoji": "🪶🧒🪶",
+    "image": "",
+    "answer": "The Boy and the Heron",
+    "options": ["The Boy and the Heron", "Spirited Away", "When Marnie Was There", "The Wind Rises"]
+  },
+  {
+    "emoji": "🌧️🌿👫",
+    "image": "",
+    "answer": "The Garden of Words",
+    "options": ["The Garden of Words", "5 Centimeters per Second", "Flavors of Youth", "Whisper of the Heart"]
+  },
+  {
+    "emoji": "🚉🌸💌",
+    "image": "",
+    "answer": "5 Centimeters per Second",
+    "options": ["The Garden of Words", "Your Name", "5 Centimeters per Second", "The Place Promised in Our Early Days"]
+  },
+  {
+    "emoji": "🧠😂⚡",
+    "image": "",
+    "answer": "The Disastrous Life of Saiki K.",
+    "options": ["Haven't You Heard? I'm Sakamoto", "The Disastrous Life of Saiki K.", "Gintama", "Mob Psycho 100"]
+  },
+  {
+    "emoji": "🏝️🎨🙂",
+    "image": "",
+    "answer": "Barakamon",
+    "options": ["Silver Spoon", "Barakamon", "Usagi Drop", "Non Non Biyori"]
+  },
+  {
+    "emoji": "🦋🌿👁️",
+    "image": "",
+    "answer": "Mushishi",
+    "options": ["Mushishi", "Natsume's Book of Friends", "Mononoke", "Kino's Journey"]
+  },
+  {
+    "emoji": "🎺🎼🏫",
+    "image": "",
+    "answer": "Sound! Euphonium",
+    "options": ["Kids on the Slope", "Your Lie in April", "Sound! Euphonium", "Nodame Cantabile"]
+  },
+  {
+    "emoji": "🏃‍♂️🏃‍♀️🏅",
+    "image": "",
+    "answer": "Run with the Wind",
+    "options": ["Run with the Wind", "Free!", "Haikyuu!!", "Tsurune"]
+  },
+  {
+    "emoji": "🎴🖐️🏆",
+    "image": "",
+    "answer": "Chihayafuru",
+    "options": ["Hikaru no Go", "Chihayafuru", "March Comes in Like a Lion", "The Tatami Galaxy"]
+  },
+  {
+    "emoji": "♟️🦁🌸",
+    "image": "",
+    "answer": "March Comes in Like a Lion",
+    "options": ["March Comes in Like a Lion", "Chihayafuru", "Honey and Clover", "Shogi no Ō"]
+  },
+  {
+    "emoji": "💀🎭🕯️",
+    "image": "",
+    "answer": "Death Parade",
+    "options": ["Death Parade", "Another", "Shiki", "Erased"]
+  },
+  {
+    "emoji": "🚕🐱🔎",
+    "image": "",
+    "answer": "Odd Taxi",
+    "options": ["Beastars", "Odd Taxi", "BNA: Brand New Animal", "Aggretsuko"]
+  },
+  {
+    "emoji": "💎🌍⚔️",
+    "image": "",
+    "answer": "Land of the Lustrous",
+    "options": ["Made in Abyss", "Land of the Lustrous", "Girls' Last Tour", "Houseki no Kuni"]
+  },
+  {
+    "emoji": "🚀🏔️👭",
+    "image": "",
+    "answer": "A Place Further than the Universe",
+    "options": ["A Place Further than the Universe", "Yuru Camp", "Non Non Biyori", "Aria the Animation"]
+  }
+]
